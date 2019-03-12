@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^basket/', include(('basketapp.urls', 'basketapp'), namespace='basket')),
     url(r'^contacts/', mainapp.contacts, name='contacts'),
     url(r'^auth/', include(('authapp.urls', 'authapp'), namespace='auth')),
+    url(r'^admin_custom/', include(('adminapp.urls', 'adminapp'), namespace='admin_custom')),
     url('admin/', admin.site.urls, name='admin'),
     # url(r'^', mainapp.main),
 ]

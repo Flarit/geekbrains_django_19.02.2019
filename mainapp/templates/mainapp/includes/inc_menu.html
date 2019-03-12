@@ -22,4 +22,9 @@
         {% endif %}
       </span>
     </a>
+    {% if user.is_superuser %}
+        <li>
+          <a href="{% url 'admin_custom:users' %}">админка</a>
+        </li>
+    {% endif %}
 </div>
